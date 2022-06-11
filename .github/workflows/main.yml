@@ -9,10 +9,10 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-deploy-dev:
+  deploy-dev:
     runs-on: ubuntu-latest
     environment: 
-      name: DEV
+      name: dev
       url: 'yuri.com'
     needs: build
     steps:
